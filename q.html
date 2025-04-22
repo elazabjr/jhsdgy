@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قصر الحواوشي | قائمة الطعام</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f8f4e9;
+            color: #000000;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #000000 25%, #000000 100%);
+            padding: 1rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 30%;
+            height: 100%;
+            background: linear-gradient(135deg, transparent 50%, #000000 50%);
+            z-index: 1;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .logo-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            text-align: center;
+            color: #d4bd8a;
+        }
+        
+        .logo-image {
+            width: 200px;
+            height: auto;
+        }
+        
+        .menu-title {
+            font-size: 2.5rem;
+            color: #d4bd8a;
+            text-align: left;
+        }
+        
+        .menu-title-en {
+            font-size: 1.5rem;
+            color: #d4bd8a;
+            margin-top: -5px;
+        }
+        
+        .menu-section {
+            margin: 30px 0;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            color: #000000;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .section-title::before,
+        .section-title::after {
+            content: "❁";
+            color: #000000;
+            margin: 0 10px;
+            font-size: 1.2rem;
+        }
+        
+        .menu-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px dashed #d4bd8a;
+        }
+        
+        .item-name {
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+        
+        .item-price {
+            font-weight: 700;
+            color: #000000;
+        }
+        
+        .price-currency {
+            font-size: 0.8rem;
+            margin-right: 3px;
+        }
+        
+        .new-badge {
+            display: inline-block;
+            background-color: #d4bd8a;
+            color: #000000;
+            padding: 2px 8px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+        }
+        
+        .footer {
+            background-color: #000000;
+            color: #d4bd8a;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-item {
+            margin: 0 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-icon {
+            margin-left: 5px;
+            font-size: 1.2rem;
+        }
+        
+        .delivery-image {
+            width: 120px;
+            margin-top: 15px;
+        }
+        
+        .slogan {
+            font-style: italic;
+            margin-top: 10px;
+        }
+        
+        .golden-divider {
+            height: 3px;
+            background-color: #d4bd8a;
+            width: 100%;
+            margin: 20px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .logo-container {
+                flex-direction: column;
+            }
+            
+            .menu-title {
+                margin-top: 20px;
+                text-align: center;
+            }
+            
+            .menu-items {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo">
+                    <div style="text-align:center;font-size:1.8rem;color:#d4bd8a;margin-bottom:10px;">
+                         <img src="c:\Users\ahmed\Downloads\logo.jpg" alt="" width="300" height="300">
+                    </div>
+                   
+                </div>
+                
+                <div>
+                    <div class="menu-title">المنيــو</div>
+                    <div class="menu-title-en">MENU</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="menu-section">
+            <h2 class="section-title">سندوتشات</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <span class="item-name">كفتة</span>
+                    <span class="item-price"><span class="price-currency">LE</span>40</span>
+                </div>
+                
+                <div class="menu-item">
+                    <span class="item-name">حواوشي علي الفحم</span>
+                    <span class="item-price"><span class="price-currency">LE</span>25</span>
+                </div>
+                
+                <div class="menu-item">
+                    <span class="item-name">كبدة</span>
+                    <span class="item-price"><span class="price-currency">LE</span>25</span>
+                </div>
+                
+                <div class="menu-item">
+                    <span class="item-name">سجق</span>
+                    <span class="item-price"><span class="price-currency">LE</span>25</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu-section">
+            <h2 class="section-title">مقبلات</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <span class="item-name">بطاطس</span>
+                    <span class="item-price"><span class="price-currency">LE</span>15</span>
+                </div>
+                
+                <div class="menu-item">
+                    <span class="item-name">بطاطس كبير</span>
+                    <span class="item-price"><span class="price-currency">LE</span>25</span>
+                </div>
+                
+                <div class="menu-item">
+                    <span class="item-name">بطاطس شيدر</span>
+                    <span class="item-price"><span class="price-currency">LE</span>35</span>
+                </div>
+                
+                <div class="menu-item">
+                    <span class="item-name">تشيكن فرايز</span>
+                    <span class="item-price"><span class="price-currency">LE</span>50</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu-section">
+            <h2 class="section-title">سندوتشات سوري</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <span class="item-name">بطاطس سوري</span>
+                    <span class="item-price"><span class="price-currency">LE</span>30</span>
+                </div>
+                
+                <div class="menu-item">
+                    <span class="item-name">بطاطس ميكس جبن</span>
+                    <span class="item-price"><span class="price-currency">LE</span>35</span>
+                </div>
+                
+                <div class="menu-item">
+                    <span class="item-name">بانيه</span>
+                    <span class="item-price"><span class="price-currency">LE</span>35</span>
+                </div>
+                
+                <div class="menu-item">
+                    <span class="item-name">استربس</span>
+                    <span class="item-price"><span class="price-currency">LE</span>45</span>
+                </div>
+                
+                <div class="menu-item">
+                    <span class="item-name">شيش</span>
+                    <span class="item-price"><span class="price-currency">LE</span>50</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu-section">
+            <h2 class="section-title">الصوصات</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <span class="item-name">طحينة</span>
+                    <span class="item-price"><span class="price-currency">LE</span>5</span>
+                </div>
+                
+                <div class="menu-item">
+                    <span class="item-name">كاتشب</span>
+                    <span class="item-price"><span class="price-currency">LE</span>5</span>
+                </div>
+                
+                <div class="menu-item">
+                    <span class="item-name">باربيكيو</span>
+                    <span class="item-price"><span class="price-currency">LE</span>5</span>
+                </div>
+                
+                <div class="menu-item">
+                    <span class="item-name">تيكساس</span>
+                    <span class="item-price"><span class="price-currency">LE</span>10</span>
+                </div>
+                
+                <div class="menu-item">
+                    <span class="item-name">رانش</span>
+                    <span class="item-price"><span class="price-currency">LE</span>10</span>
+                </div>
+                
+                <div class="menu-item">
+                    <span class="item-name">شيدر</span>
+                    <span class="item-price"><span class="price-currency">LE</span>10</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu-section">
+            <h2 class="section-title">الجديد</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <span class="item-name"><span class="new-badge">جديد</span>الوحش</span>
+                    <span class="item-price"><span class="price-currency">LE</span>60</span>
+                </div>
+                
+                <div class="menu-item">
+                    <span class="item-name"><span class="new-badge">جديد</span>اسماش برجر</span>
+                    <span class="item-price"><span class="price-currency">LE</span>90</span>
+                </div>
+                
+                <div class="menu-item">
+                    <span class="item-name"><span class="new-badge">جديد</span>تشيكن برجر</span>
+                    <span class="item-price"><span class="price-currency">LE</span>100</span>
+                </div>
+                
+                <div class="menu-item">
+                    <span class="item-name"><span class="new-badge">جديد</span>حواوشي بيتزا</span>
+                    <span class="item-price"><span class="price-currency">LE</span>35</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu-section">
+            <h2 class="section-title">المشروبات</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <span class="item-name">بيج كولا</span>
+                    <span class="item-price"><span class="price-currency">LE</span>15</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="container">
+            <div>اطلبنا الآن نصلك أينما كنت</div>
+            <div class="golden-divider"></div>
+            <div>طريق ميت عاصم بجوار معرض السجاد</div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <span>01013814756</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <span>01099123435</span>
+                </div>
+            </div>
+            <div class="slogan">من فات قديمه تاه</div>
+        </div>
+    </div>
+</body>
+</html>
